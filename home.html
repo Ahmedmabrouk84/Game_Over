@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="js/auth.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/logo-sm.png " type="image/x-icon" />
+    <title>Game Over</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis .com/css2?family=Comfortaa:wght@300..700&family=Nerko+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/home.css" />
+  </head>
+  <body>
+    <!-- ======================  Navbar ======================= -->
+    <nav class="navbar my-nav p-2 d-flex align-items-center navbar-expand-lg">
+      <div class="container">
+        <h5 class="navbar-brand d-flex align-items-center" href="#">
+          <img
+            src="images/logo-sm.png"
+            max-width="40px"
+            height="40px"
+            class="pe-1"
+            alt=" GAMEOVER logo"
+          />
+          <span>GAMEOVER</span>
+        </h5>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 .mylist mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                data-category="MMORPG"
+                href="#"
+                >MMORPG</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-category="SHOOTER" href="#">SHOOTER</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" data-category="SAILING" href="#">SAILING</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" data-category="PERMADEATH" href="#"
+                >PERMADEATH</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" data-category="SUPERHERO" href="#"
+                >SUPERHERO</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" data-category="PIXEL" href="#">PIXEL</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" data-category="PVP" href="#">PVP</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" data-category="ACTION" href="#">ACTION</a>
+            </li>
+          </ul>
+          <ol class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <span id="logout-btn" class="nav-link logout-btn">LogOut</span>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </nav>
+    <!-- ======================  home ======================= -->
+    <main>
+      <section class="home">
+        <div class="container">
+          <h1 class="my-3 mb-4">
+            Top Free Moba Games For PC And Browser In 2023!
+          </h1>
+          <!-- ======================== Card of Movies ======================= -->
+          <div class="row g-4" id="rowData">
+            <div class="">
+              <video muted="true" preload="none" loop src="" class=" "></video>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="looding d-none">
+          <span class="loader"></span>
+        </div>
+      </section>
+      <span class="icon-dark position-fixed">
+        <i role="button" id="mode" class="fa-regular fa-sun fa-xl p-3"></i>
+      </span>
+    </main>
+    <!-- =====================  footer ======================= -->
+
+    <script src="js/home.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

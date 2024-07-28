@@ -1,0 +1,98 @@
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+/*===================== light && Dark mood =====================*/
+
+[data-theme="light"] {
+  --main-color: #eeeeee;
+  --seconde-color: #909396;
+  --color-text: #000;
+  --btn-main-color: #414550;
+} 
+
+[data-theme="dark"] {
+  --main-color: #272b30;
+  --seconde-color: #32383e;
+  --color-text: #fff;
+  --btn-main-color: #0d0d31;
+}
+
+/* ======================= */
+
+body {
+  font-family: "Comfortaa", sans-serif;
+  background-color: var(--main-color);
+  min-height: 100vh;
+}
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Nerko One", cursive;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 500;
+  color: var(--color-text);
+}
+h2 {
+  font-size: 40px;
+  color: var(--color-text);
+}
+
+nav a {
+  color: var(--color-text);
+}
+
+.li-2 {
+  color: #09c;
+}
+
+.breadcrumb-item +.breadcrumb-item::before {
+  color: var(--color-text) !important;
+}
+
+.home .card { 
+  color: var(--color-text) !important;
+  background-color:   transparent;
+}
+.home .card-p{
+  padding: 10px;
+  color: var(--color-text);
+}
+
+.home .caption p{
+    color: var(--color-text) !important;
+    line-height: 1.7;
+}
+.home .card .card-body h5 {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+.home .card .card-body p {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-text) !important;
+  margin-bottom: 0;
+}
+.home .card .card-footer p {
+  font-size: 0.875rem;
+  margin: 0.25rem;
+}
+
+.icon-dark {
+  display: block;
+  color: var(--color-text);
+  bottom: 1.25rem;
+  right: 0.9375rem;
+}

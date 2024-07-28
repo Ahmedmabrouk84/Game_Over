@@ -1,0 +1,173 @@
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+/*  light && Dark mood */
+html{
+  transition: 5s;
+}
+[data-theme="light"] {
+  --main-color: #eeeeee;
+  --seconde-color: #909396;
+  --color-text: #000;
+  --btn-main-color: #414550;
+} 
+
+[data-theme="dark"] {
+  --main-color: #272b30;
+  --seconde-color: #32383e;
+  --color-text: #fff;
+  --btn-main-color: #0d0d31;
+}
+
+/* ======================= */
+body {
+  font-family: "Comfortaa", sans-serif;
+  background-color: var( --main-color);
+}
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+}
+
+h1{
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--color-text);
+}
+nav {
+  border-bottom: double .0625rem  var(--color-text);
+}
+.my-nav {
+  background-color: var(--main-color);
+  color: var(--color-text);
+}
+
+.my-nav button{
+  color: var(--main-color);
+  background-color: var(--color-text) ;
+ 
+}
+.my-nav .navbar-brand span{
+  color: var(--color-text);
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+.my-nav .nav-item .nav-link {
+  color: var(--color-text);
+  font-size: .9375rem;
+  font-weight: 500;
+  transition: .5s;
+}
+.my-nav .nav-item .nav-link:hover{
+  color: #09c;
+}
+.active{
+  color: #09c !important;
+}
+.my-nav .logout-btn{
+cursor: pointer;
+
+}
+
+.home .card{
+  /* transition: .4s ease-in-out; */
+  transition: 0.5s, filter 0.5s 0.1s;
+  cursor: pointer;
+  color: var(--color-text);
+  transform: scale(.9);
+  background-color: var(--main-color);
+  filter: grayscale(0.7);
+  transition: transform 0.5s, filter 0.5s 0.1s;
+}
+
+.home .card:hover{
+  transform: scale(1);
+  filter: grayscale(0)
+ }
+
+.home .card .card-body h5{
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+.home .card .card-title{
+  font-size: 14px !important;
+}
+.home .card .card-body p{
+  font-size: .875rem;
+  font-weight: 500;
+  color: var(--color-text);
+  margin-top: .375rem;
+  margin-bottom: 0;
+}
+.home .card .card-footer p{
+font-size: .8438rem;
+padding-inline: .5rem;
+padding-block: .25rem;
+margin-block:.25rem;
+background-color:  var(--seconde-color);
+}
+
+  .home .card .card-footer{
+    padding-block: .3125rem ;
+  }
+
+  .icon-dark{
+    display: block;
+    color: var(--color-text );
+    bottom: 1.25rem;
+    right: .9375rem;
+  }
+
+
+  .looding{
+    background-color: rgba(0, 0, 0, .9);
+    position: fixed;
+    inset: 0;
+    display: grid;
+    place-content: center;
+  }
+
+
+  .loader {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    animation: rotate 1.5s infinite linear;
+  }
+
+  .loader:before,
+  .loader:after {
+    content:"";
+    flex:1;
+    background:#fff;
+    animation: mvx 0.5s infinite linear alternate;
+  }
+  .loader:before {
+    background: #FF3D00;
+    animation-name:mvrx;
+  }
+
+  @keyframes rotate {
+    100% {transform: rotate(360deg)}
+  }
+  @keyframes mvx {
+    0% {transform: translateX(-15px)}
+    100% {transform: translateX(15px)}
+  }
+  @keyframes mvrx {
+    0% {transform: translateX(15px)}
+    100% {transform: translateX(-15px)}
+  }
+  

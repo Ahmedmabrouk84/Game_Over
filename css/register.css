@@ -1,0 +1,124 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+/*  =========== dark or light mood =========== */
+
+[data-theme="light"] {
+  --main-color: #eeeeee;
+  --seconde-color: #909396;
+  --color-text: #000;
+  --btn-main-color: #414550;
+}  
+
+ [data-theme="dark"] {
+  --main-color: #272b30;
+  --seconde-color: #32383e;
+  --color-text: #fff;
+  --btn-main-color: #0d0d31;
+}
+
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+a {
+  text-decoration: none;
+  color: #6c757d;
+  /* color: var(--seconde-color); */
+}
+
+body {
+  font-family: "Comfortaa", cursive !important;
+}
+
+.home {
+  background-color: var(--main-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Nerko One", cursive !important;
+}
+.icon {
+  display: block;
+  /* color: #fff; */
+  color: var(--color-text);
+  bottom: 1.25rem;
+  right: 0.9375rem;
+}
+
+.box-inputs h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-top: 0.25rem;
+  margin-bottom: 2.1875rem;
+  color: var(--color-text);
+}
+
+.home .box-inputs {
+  /* background-color: #3d4145; */
+  background-color: var(--seconde-color);
+}
+.img {
+  background-image: url(../images/register.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 34.75rem;
+}
+
+::placeholder {
+  color: var(--color-text) !important;
+  font-size: 0.9375rem;
+}
+
+.box-inputs input {
+  border: 0;
+  background-color: var(--main-color);
+  /* background-color: #272b30; */
+  color: var(--color-text);
+}
+
+.box-inputs input:focus {
+  color: var(--color-text);
+  background-color: var(--main-color);
+  /* background-color: var(--btn-main-color); */
+}
+.box-inputs button {
+  color: var(--color-text);
+  background-color: var(--main-color);
+  /* background-color: #272729; */
+}
+.box-inputs button:hover {
+  /* background-color: var(--seconde-color); */
+  background-color: var(--btn-main-color);
+  color: var(--color-text) ;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+footer p {
+  font-size: 0.875rem !important;
+  color: var(--color-text);
+}
+.msg-inputs{
+  color: var(--color-text);
+  text-align: center;
+}
+.log-p{
+
+  color: var(--color-text) !important;
+}
+
+.log-a{
+  display: inline-block;
+  color: var(--ancor-color);
+}

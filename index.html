@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/logo-sm.png " type="image/x-icon" />
+    <title>Game Over</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis .com/css2?family=Comfortaa:wght@300..700&family=Nerko+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <!-- ======================  header ======================= -->
+    <header>
+      <section
+        class="home min-vh-100 d-flex justify-content-center align-items-center"
+      >
+        <div class="container">
+          <div
+            class="row g-0 rounded justify-content-center align-items-center"
+          >
+            <!-- ====================  GAM Over IMG   ================= -->
+            <div class="col-lg-5 shadow d-none d-md-block">
+              <div class="Gam-img rounded">
+                <div class="img"></div>
+              </div>
+            </div>
+            <!-- ====================  GAM Over inputs   ================= -->
+            <div class="col-lg-7">
+              <div class="px-3 py-4 h-100 box-inputs">
+                <header class="text-center">
+                  <div class="gam-logo">
+                    <img
+                      src="images/logo-sm.png"
+                      alt=" logo for Game over website"
+                    />
+                  </div>
+                  <h1>LogIn to Game Over</h1>
+                </header>
+                <form id="form" class="form">
+                  <div class="row g-3">
+                    <div class="col-12">
+                      <div class="form-data">
+                        <input
+                          type="email"
+                          id="email"
+                          class="form-control"
+                          placeholder="Email Address"
+                        />
+                        <div class="alert alert-danger p-1 invalid-feedback">
+                          <p class="m-0 ps-1">Email Is Required</p>
+                          <p class="m-0 ps-1">InValid Email Formate</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-data">
+                        <input
+                          type="password"
+                          id="password"
+                          class="form-control"
+                          placeholder="Password"
+                        />
+                        <div class="alert alert-danger p-1 invalid-feedback">
+                          <p class="m-0 ps-1">Password Is Required</p>
+                          <p class="m-0 ps-1">
+                            Minimum eight characters, at least one letter and
+                            one number
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <button type="submit" class="btn w-100">LogIn</button>
+                    </div>
+                  </div>
+                </form>
+                <p id="userMsg" class="msg-inputs text-center my-1"></p>
+                <footer class="text-center">
+                  <p class="log-p">Not a member yet?<a href="register.html">
+                      <span class="log-a">Create Account</span>
+                      <span><i class="fa-solid fa-angle-right"></i></span
+                    ></a>
+                  </p>
+                </footer>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <span class="icon-dark position-fixed"
+        ><i role="button" id="mode" class="fa-regular fa-sun fa-xl p-3"></i
+      ></span>
+    </header>
+
+    <script src="js/index.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
