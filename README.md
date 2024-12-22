@@ -19,5 +19,6 @@
   <li>Duplicate user handling.</li>
   <li>Categorized games.</li>
   <li>Light & Dark Mode</li>
+  <li>Loading Screen</li>
   <li>Video autoplay on hover.</li>
 </ul>
