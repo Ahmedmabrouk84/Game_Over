@@ -1,5 +1,6 @@
 <h1> Game Over</h1>
 <span>Games website.</span>
+<p> A platform dedicated to showcasing games, where users can explore and rate their favorite titles</p>
 <h2>Demo</h2>
 <a href="https://ahmedmabrouk84.github.io/Game_Over/">Link of Game Over </a>
 <h2>Technologies Skills Used</h2>
