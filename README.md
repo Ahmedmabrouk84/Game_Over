@@ -5,7 +5,7 @@
 Whether you're looking for the best games, eager to explore new experiences, or want to share your opinion with others, our platform provides everything you need in the world of gaming! 🚀🔥</p>
 <h2>Demo</h2>
 <a href="https://ahmedmabrouk84.github.io/Game_Over/">Link of Game Over </a>
-<h2>Technologies Skills Used</h2>
+<h2>Technologies Skills </h2>
 <ul>
   <li>HTML5</li>
   <li>CSS3</li>
@@ -14,7 +14,7 @@ Whether you're looking for the best games, eager to explore new experiences, or 
   <li>Responsive Web Design</li>
   <li>JavaScript</li>
 </ul>
-<h2>Features</h2>
+<h2> Key Features</h2>
 <ul>
   <li>Create new user (sign up).</li>
   <li>Login with your credentials.</li>
